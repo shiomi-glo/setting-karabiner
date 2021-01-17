@@ -1,7 +1,8 @@
 {
-  "title": "Exchange hyphen and underscore",
-  "rules": [{
-    "description": "caps_lockのon_off",
+  "title": "編集モード関連",
+  "rules": [
+    {
+    "description": "モード切り替え",
     "manipulators": [
       {
         "type": "basic",
@@ -42,15 +43,25 @@
             "value": 1
           }
         ]
-      },
+      }
+    ]
+  },
 
+  {
+    "description": "編集モード",
+    "manipulators": [
       {
         "type": "basic",
         "from": {
-          "key_code": "h"
+          "key_code": "1"
         },
         "to": [
-          { "key_code": "left_arrow" }
+          {
+            "key_code": "1",
+            "modifiers": [
+              "left_shift"
+            ]
+          }
         ],
         "conditions": [
           {
@@ -58,9 +69,8 @@
             "name": "no_insert_mode", 
             "value": 1
           }
-        ]
+        ]  
       }
-
     ]
   }]
 }

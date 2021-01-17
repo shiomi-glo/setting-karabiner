@@ -1,7 +1,6 @@
 {
   "title": "Shiomi Setting",
-  "rules":
-  [
+  "rules": [
     {
       "description": "semicolon to enter",
       "manipulators": [
@@ -55,8 +54,6 @@
         }
       ]
     },
-
-
     {
       "description": "アプリ切り替え",
       "manipulators": [
@@ -94,8 +91,5 @@
         }
       ]
     }
-
-
-
   ]
 }
