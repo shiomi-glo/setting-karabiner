@@ -1,5 +1,5 @@
 {
-  "title": "Exchange hyphen and underscore",
+  "title": "半角の時のみ -_ 入れ替え",
   "rules": [
     {
       "description": "Exchange hyphen and underscore",
@@ -21,6 +21,12 @@
                 "left_shift"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [{ "language": "en" }]
+            }
           ]
         },
         {
@@ -39,6 +45,12 @@
           "to": [
             {
               "key_code": "hyphen"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [{ "language": "en" }]
             }
           ]
         }
