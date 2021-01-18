@@ -1,5 +1,5 @@
 {
-  "title": "編集モード関連",
+  "title": "モード切り替え",
   "rules": [
     {
       "description": "モード切り替え",
@@ -45,15 +45,7 @@
               "value": 1
             }
           ]
-        }
-      ]
-    },
-
-
-
-    {
-      "description": "数字キーは原則として記号として使用する。",
-      "manipulators": [
+        },
         {
           "type": "basic",
           "from": {
@@ -66,27 +58,33 @@
                 "left_shift"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "no_insert_mode",
+              "value": 1
+            }
           ]
         },
         {
           "type": "basic",
           "from": {
-              "key_code": "1",
-              "modifiers": {
-                "mandatory": [
-                  "shift"
-                ],
-                "optional": [
-                  "caps_lock"
-                ]
-              }
+              "key_code": "1"
             }
           ,
           "to": {
             "key_code": "1"
-          }
+          },
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "no_insert_mode",
+              "value": 1
+            }
+          ]
         },
-
+        
         {
           "type": "basic",
           "from": {
@@ -99,27 +97,33 @@
                 "left_shift"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "no_insert_mode",
+              "value": 1
+            }
           ]
         },
         {
           "type": "basic",
           "from": {
-              "key_code": "2",
-              "modifiers": {
-                "mandatory": [
-                  "shift"
-                ],
-                "optional": [
-                  "caps_lock"
-                ]
-              }
+              "key_code": "2"
             }
           ,
           "to": {
             "key_code": "2"
-          }
+          },
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "no_insert_mode",
+              "value": 1
+            }
+          ]
         },
-
+        
         {
           "type": "basic",
           "from": {
@@ -132,27 +136,33 @@
                 "left_shift"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "no_insert_mode",
+              "value": 1
+            }
           ]
         },
         {
           "type": "basic",
           "from": {
-              "key_code": "3",
-              "modifiers": {
-                "mandatory": [
-                  "shift"
-                ],
-                "optional": [
-                  "caps_lock"
-                ]
-              }
+              "key_code": "3"
             }
           ,
           "to": {
             "key_code": "3"
-          }
+          },
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "no_insert_mode",
+              "value": 1
+            }
+          ]
         },
-
+        
         {
           "type": "basic",
           "from": {
@@ -165,27 +175,33 @@
                 "left_shift"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "no_insert_mode",
+              "value": 1
+            }
           ]
         },
         {
           "type": "basic",
           "from": {
-              "key_code": "4",
-              "modifiers": {
-                "mandatory": [
-                  "shift"
-                ],
-                "optional": [
-                  "caps_lock"
-                ]
-              }
+              "key_code": "4"
             }
           ,
           "to": {
             "key_code": "4"
-          }
+          },
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "no_insert_mode",
+              "value": 1
+            }
+          ]
         },
-
+        
         {
           "type": "basic",
           "from": {
@@ -198,27 +214,33 @@
                 "left_shift"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "no_insert_mode",
+              "value": 1
+            }
           ]
         },
         {
           "type": "basic",
           "from": {
-              "key_code": "5",
-              "modifiers": {
-                "mandatory": [
-                  "shift"
-                ],
-                "optional": [
-                  "caps_lock"
-                ]
-              }
+              "key_code": "5"
             }
           ,
           "to": {
             "key_code": "5"
-          }
+          },
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "no_insert_mode",
+              "value": 1
+            }
+          ]
         },
-
+        
         {
           "type": "basic",
           "from": {
@@ -231,27 +253,33 @@
                 "left_shift"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "no_insert_mode",
+              "value": 1
+            }
           ]
         },
         {
           "type": "basic",
           "from": {
-              "key_code": "6",
-              "modifiers": {
-                "mandatory": [
-                  "shift"
-                ],
-                "optional": [
-                  "caps_lock"
-                ]
-              }
+              "key_code": "6"
             }
           ,
           "to": {
             "key_code": "6"
-          }
+          },
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "no_insert_mode",
+              "value": 1
+            }
+          ]
         },
-
+        
         {
           "type": "basic",
           "from": {
@@ -264,27 +292,33 @@
                 "left_shift"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "no_insert_mode",
+              "value": 1
+            }
           ]
         },
         {
           "type": "basic",
           "from": {
-              "key_code": "7",
-              "modifiers": {
-                "mandatory": [
-                  "shift"
-                ],
-                "optional": [
-                  "caps_lock"
-                ]
-              }
+              "key_code": "7"
             }
           ,
           "to": {
             "key_code": "7"
-          }
+          },
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "no_insert_mode",
+              "value": 1
+            }
+          ]
         },
-
+        
         {
           "type": "basic",
           "from": {
@@ -297,27 +331,33 @@
                 "left_shift"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "no_insert_mode",
+              "value": 1
+            }
           ]
         },
         {
           "type": "basic",
           "from": {
-              "key_code": "8",
-              "modifiers": {
-                "mandatory": [
-                  "shift"
-                ],
-                "optional": [
-                  "caps_lock"
-                ]
-              }
+              "key_code": "8"
             }
           ,
           "to": {
             "key_code": "8"
-          }
+          },
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "no_insert_mode",
+              "value": 1
+            }
+          ]
         },
-
+        
         {
           "type": "basic",
           "from": {
@@ -330,27 +370,33 @@
                 "left_shift"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "no_insert_mode",
+              "value": 1
+            }
           ]
         },
         {
           "type": "basic",
           "from": {
-              "key_code": "9",
-              "modifiers": {
-                "mandatory": [
-                  "shift"
-                ],
-                "optional": [
-                  "caps_lock"
-                ]
-              }
+              "key_code": "9"
             }
           ,
           "to": {
             "key_code": "9"
-          }
+          },
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "no_insert_mode",
+              "value": 1
+            }
+          ]
         },
-
+        
         {
           "type": "basic",
           "from": {
@@ -363,24 +409,30 @@
                 "left_shift"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "variable_unless",
+              "name": "no_insert_mode",
+              "value": 1
+            }
           ]
         },
         {
           "type": "basic",
           "from": {
-              "key_code": "0",
-              "modifiers": {
-                "mandatory": [
-                  "shift"
-                ],
-                "optional": [
-                  "caps_lock"
-                ]
-              }
+              "key_code": "0"
             },
           "to": {
             "key_code": "0"
-          }
+          },
+          "conditions": [
+              {
+                "type": "variable_if",
+                "name": "no_insert_mode",
+                "value": 1
+              }
+          ]
         }
       ]
     }

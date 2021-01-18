@@ -1,5 +1,5 @@
 {
-  "description": "数字キーは原則として記号として使用する。",
+  "description": "数字キーモード",
   "manipulators": [
     {
       "type": "basic",
