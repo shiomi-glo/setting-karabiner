@@ -2,7 +2,7 @@
   "title": "MySettings",
   "rules": [
     {
-      "description": "semicolon to enter",
+      "description": "my_settings",
       "manipulators": [
         {
           "type": "basic",
@@ -46,12 +46,8 @@
               "key_code": "return_or_enter"
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "アプリ切り替え",
-      "manipulators": [
+        },
+
         {
           "type": "basic",
           "from": {
@@ -80,7 +76,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Google Chrome'"
+              "shell_command": "open -a 'Google Chrome Dev'"
             }
           ]
         },
@@ -96,11 +92,73 @@
           },
           "to": [
             {
+              "shell_command": "open -a 'Google Chrome'"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "4",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
               "shell_command": "open -a 'Slack'"
             }
           ]
         }
       ]
+    },
+    {
+      "description": "control_alone",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_control",
+            "modifiers": {
+              "optional": [
+                "any"
+              ] 
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_control"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "escape"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "fn",
+            "modifiers": {
+              "optional": [
+                "any"
+              ] 
+            }
+          },
+          "to": [
+            {
+              "key_code": "fn"
+            }
+          ],
+          "to_if_alone": [
+            { "pointing_button": "button1" }
+          ]
+        }
+      ]
     }
+
   ]
 }

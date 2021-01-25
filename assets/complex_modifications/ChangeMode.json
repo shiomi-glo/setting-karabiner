@@ -1,8 +1,8 @@
 {
-  "title": "モード切り替え",
+  "title": "ChangeMode",
   "rules": [
     {
-      "description": "モード切り替え",
+      "description": "change_mode_by_capslock",
       "manipulators": [
         {
           "type": "basic",
