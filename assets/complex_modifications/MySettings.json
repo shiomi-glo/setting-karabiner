@@ -1,5 +1,5 @@
 {
-  "title": "Shiomi Setting",
+  "title": "MySettings",
   "rules": [
     {
       "description": "semicolon to enter",
@@ -86,6 +86,22 @@
           "to": [
             {
               "shell_command": "open -a 'Google Chrome'"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "3",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Slack'"
             }
           ]
         }
