@@ -16,7 +16,7 @@
                 },
                 "rules": [
                     {
-                        "description": "change_mode_by_capsLock",
+                        "description": "change_mode_by_capslock",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -609,7 +609,7 @@
                         ]
                     },
                     {
-                        "description": "my_settings",
+                        "description": "semicolon_to_enter",
                         "manipulators": [
                             {
                                 "from": {
@@ -653,7 +653,12 @@
                                     }
                                 ],
                                 "type": "basic"
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "description": "open_apps",
+                        "manipulators": [
                             {
                                 "from": {
                                     "key_code": "1",
@@ -721,7 +726,7 @@
                         ]
                     },
                     {
-                        "description": "control_alone",
+                        "description": "control_alone_to_esc",
                         "manipulators": [
                             {
                                 "from": {

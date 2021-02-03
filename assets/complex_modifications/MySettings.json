@@ -2,7 +2,7 @@
   "title": "MySettings",
   "rules": [
     {
-      "description": "my_settings",
+      "description": "semicolon_to_enter",
       "manipulators": [
         {
           "type": "basic",
@@ -46,8 +46,12 @@
               "key_code": "return_or_enter"
             }
           ]
-        },
-
+        }
+      ]
+    },
+    {
+      "description": "open_apps",
+      "manipulators": [
         {
           "type": "basic",
           "from": {
@@ -115,7 +119,7 @@
       ]
     },
     {
-      "description": "control_alone",
+      "description": "control_alone_to_esc",
       "manipulators": [
         {
           "type": "basic",
@@ -159,6 +163,5 @@
         }
       ]
     }
-
   ]
 }
